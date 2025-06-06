@@ -310,9 +310,50 @@ section .header,
 }
 
 .pricing .card button:hover {
-     background-color: #6a257f;
+     background-color: #6a257f88;
     border-color: #ffffff;
 }
+
+
+   .main-manifesto {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .msg {
+      position: relative;
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      max-width: 70%;
+      color: white;
+      line-height: 1.4;
+    }
+
+
+    /* Mensagem enviada (direita) */
+    .msg-right {
+      background-color: #46257F;
+      align-self: flex-end;
+      color: #ffffff;
+    }
+      /* Mensagem recebida (esquerda) */
+    .msg-left {
+        background-color: #46257F;
+        color: #ffffff;
+    }
+    .msg-right:hover {
+      border: 1px solid white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transform: scale(1.02);
+    }
+
+    .msg-left:hover {
+        border: 1px solid white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transform: scale(1.02);
+    }
+
 
 
 .benefits-list li{
