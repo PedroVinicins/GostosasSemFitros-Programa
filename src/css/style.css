@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+     transition: all 0.8s ease;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    outline: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #46257F;
+    line-height: 1.6;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav-logo img {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link a {
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
+}
+
+.link a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #46257F;
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after {
+    width: 70%;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    color: #fff;
+    background-color: #46257F;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 900;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #9e1eaf;
+}
+
+.container {
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+.blur {
+    position: absolute;
+    box-shadow: 0 0 1000px 400px #A17DBB;
+    z-index: -100;
+}
+.blur-left {
+    position: absolute;
+    left: 700px;
+    box-shadow: 0 0 1000px 400px #A17DBB;
+    z-index: -100;
+}
+
+header {
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+header .content h4 {
+    margin-bottom: 1rem;
+    color: #ccc;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+header .content h1 {
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+header .content h1 span {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+header .image {
+    position: relative;
+}
+
+header .image::before {
+    content: "★";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 15rem;
+    color: #46257F;
+    opacity: 0.15;
+    z-index: -100;
+    transition: all 0.3s ease;
+}
+
+header .image img {
+    max-width: 600px;
+    margin: auto;
+    width: 100%;
+}
+
+header .image img:hover {
+    transform: scale(1.02);
+}
+
+section .header,
+.header {
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.features {
+    margin-top: 2rem;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    grid-template-columns: 1fr;
+}
+
+.features .card {
+    backdrop-filter: blur(10px);
+    background-color: #46257fb9;
+    padding: 1rem;
+    margin: 1rem 0;
+    width: 100%;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.features .card:hover {
+    background-color: #46257F;
+    border-color: #ffffff3a;
+}
+
+.features .card span {
+    display: inline-block;
+    background-color: #678385;
+    padding: 2px 9px;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.features .card h4 {
+    margin-bottom: 0.5rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.features .card p {
+    color: #ccc;
+    margin-bottom: 1rem;
+
+}
+
+.card p:hover {
+    color: #fff;
+}
+
+.features .card a {
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.features .card a:hover {
+    color: #1e97af;
+}
+
+.sub-header {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    color: #ffffff;
+}
+
+.pricing {
+    display: grid;
+    margin-top: 4rem;
+    padding: 2rem 1rem;
+    width: 100%;
+    grid-template-columns: 1fr;
+    align-items: stretch;
+    gap: 2rem;
+}
+
+.pricing .card {
+    padding: 3rem 2rem;
+    background-color: #46257F;
+    backdrop-filter: blur(10px);
+       box-shadow: #ffffff3d 0px 0px 20px 5px;  
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.pricing .card:hover {
+    background-color: #46257F;
+    border-color: #fff;
+}
+
+.pricing .card .content {
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+.pricing .card h4 {
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.pricing .card h3 {
+    color: #fff;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    border-bottom: 2px dashed #fff;
+}
+
+.pricing .card p {
+    color: #fff;
+    margin-bottom: 0.75rem;
+}
+
+.pricing .card p i {
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+}
+
+.pricing .card button {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    transition: all 0.3s ease;
+}
+
+.pricing .card button:hover {
+     background-color: #6a257f;
+    border-color: #ffffff;
+}
+
+
+.benefits-list li{
+    background-color: #46257f75;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    list-style: none;
+    color: #000000;
+    margin-bottom: 0.5rem;
+    transition: all 0.2s ease;
+}
+.benefits-list li:hover    {
+    border: 1px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 0.5rem 1.2rem;
+    color: #fff;
+    font-size: xx-large;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.pricing-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.pricing-table .total {
+    font-weight: bold;
+    background-color: #f8f8f8;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.testimonials .card {
+    max-width: 300px;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.testimonials img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.authority-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pricing {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .authority-cards {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1024px) {
+    .features {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .pricing {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+footer {
+    position: relative;
+    display: grid;
+    grid-template-columns: 400px repeat(3, 1fr);
+    gap: 2rem;
+}
+
+footer .column .logo {
+    max-width: 100px;
+    margin-bottom: 2rem;
+}
+
+footer .column p {
+    color: #ccc;
+    margin-bottom: 2rem;
+}
+
+footer .column .socials {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer .column .socials a {
+    color: #ccc;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 1.25rem;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+}
+
+footer .column .socials a:hover {
+    color: #fff;
+    background-color: #1dd8c5;
+    border-color: #1dccd8;
+}
+
+footer .column h4 {
+    color: #fff;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+footer .column > a {
+    display: block;
+    color: #ccc;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+footer .column > a:hover {
+    color: #1dc2d8;
+}
+
+@media (max-width: 900px) {
+    .nav-links {
+        display: none;
+    }
+
+    header {
+        grid-template-columns: 1fr;
+    }
+
+    header .image {
+        grid-area: 1/1/2/2;
+    }
+
+    footer {
+        grid-template-columns: 1fr 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    header .image::before {
+        display: none;
+    }
+
+    footer {
+        grid-template-columns: 1fr 150px;
+    }
+}
+
+a:focus,
+button:focus {
+    outline: 2px dashed #fff;
+    outline-offset: 4px;
+}
