@@ -26,6 +26,12 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #46257F;
     line-height: 1.6;
+    
+}
+
+html{
+  scrollbar-color: #A17DBB #333;
+    scrollbar-width: thin;
 }
 
 nav {
@@ -83,7 +89,7 @@ nav {
 }
 
 .btn:hover {
-    background-color: #9e1eaf;
+    background-color: #46257f8c;
 }
 
 .container {
@@ -100,8 +106,8 @@ nav {
 }
 .blur-left {
     position: absolute;
-    left: 700px;
-    box-shadow: 0 0 1000px 400px #A17DBB;
+    left: 1550px;
+    box-shadow: 0 0 1000px 500px #A17DBB;
     z-index: -100;
 }
 
@@ -202,7 +208,7 @@ section .header,
 
 .features .card span {
     display: inline-block;
-    background-color: #678385;
+    background-color: #bc02d4;
     padding: 2px 9px;
     margin-bottom: 1rem;
     font-size: 1.75rem;
@@ -446,6 +452,9 @@ footer {
     display: grid;
     grid-template-columns: 400px repeat(3, 1fr);
     gap: 2rem;
+    background-color: #000000;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 footer .column .logo {
@@ -475,8 +484,8 @@ footer .column .socials a {
 
 footer .column .socials a:hover {
     color: #fff;
-    background-color: #1dd8c5;
-    border-color: #1dccd8;
+    background-color: #aa1bc7;
+    border-color: #ffffff;
 }
 
 footer .column h4 {
@@ -494,7 +503,7 @@ footer .column > a {
 }
 
 footer .column > a:hover {
-    color: #1dc2d8;
+    color: #ffffff;
 }
 
 @media (max-width: 900px) {
