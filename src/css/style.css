@@ -6,6 +6,7 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: "Inter", sans-serif;
+  transition: 0.8s ease;
 }
 
 img {
@@ -95,18 +96,6 @@ nav {
   padding: 5rem 2rem;
 }
 
-.blur {
-  position: absolute;
-  box-shadow: 0 0 1000px 400px #a17dbb;
-  z-index: -100;
-}
-.blur-left {
-  position: absolute;
-  left: 1550px;
-  box-shadow: 0 0 1000px 500px #a17dbb;
-  z-index: -100;
-}
-
 header {
   position: relative;
   padding-top: 2rem;
@@ -135,6 +124,12 @@ header .content h1 span {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px #46257f;
+}
+header p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: #46257f;
 }
 
 p {
@@ -180,47 +175,84 @@ section .header,
   font-weight: 900;
 }
 
-.profissionais{
-  position: relative;
-  padding-top: 1rem;
+
+.poliana-card{
+  display: grid;
+  grid-template-columns: repeat(2 ,1fr);
+  align-items: center;
+}
+
+.foto-poliana{
+  max-width: 900px;
+  width: 100%;
+}
+
+.content-poliana h1{
+   color: #46257f;
+  margin-bottom: 1rem;
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 4rem;
+}
+
+.content-poliana p{
+  color: #46257f;
+  margin-left: 12px;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+.ana-card{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  gap: 2rem;
 }
 
-.profissionais img {
-  max-width: 700px;
+.foto-ana{
+  max-width: 900px;
   width: 100%;
-  margin: auto;
 }
 
-.profissionais img:hover {
-  transform: scale(1.02);
+.blur {
+  position: absolute;
+  box-shadow: 0 0 1000px 400px #debbf7;
+  z-index: -100;
 }
 
-.profissionais .content h1 {
+.logo{
+  display: flex;
+  position: relative;
+
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.logo img{
+  display: flex;
+  position: relative;
+  top: -120px;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}
+
+.content-ana h1{
   color: #46257f;
   margin-bottom: 1rem;
   font-size: 4rem;
   font-weight: 900;
+    margin-left: 12px;
   line-height: 4rem;
 }
-.profissionais .content-left h1 {
+.content-ana p{
   color: #46257f;
+  margin-left: 12px;
   margin-bottom: 1rem;
-  font-size: 4rem;
-  font-weight: 900;
-  line-height: 4rem;
-}
+  font-weight: 700;
+  line-height: 2rem;
 
-.profissionais .content{
-  margin-right: 25px;
 }
-.profissionais .content-left{
-  margin-left: 25px;
-}
-
 
 .features {
   margin-top: 2rem;
@@ -313,7 +345,7 @@ section .header,
   position: relative;
   padding: 1rem 1.5rem;
   border-radius: 10px;
-  max-width: 70%;
+  max-width: 100%;
   color: white;
   line-height: 1.4;
 }
@@ -772,7 +804,7 @@ footer {
   display: grid;
   grid-template-columns: 400px repeat(3, 1fr);
   gap: 2rem;
-  background-color: #000000bb;
+  background-color: #a17dbb;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
