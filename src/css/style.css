@@ -42,8 +42,7 @@ nav {
 }
 
 .nav-logo img {
-  max-width: 100px;
-  border-radius: 50%;
+  max-width: 200px;
 }
 
 .nav-links {
@@ -119,7 +118,7 @@ header {
 
 header .content h4 {
   margin-bottom: 1rem;
-  color: #ccc;
+  color: #ffffff;
   font-size: 1rem;
   font-weight: 600;
 }
@@ -127,7 +126,7 @@ header .content h4 {
 header .content h1 {
   color: #46257f;
   margin-bottom: 1rem;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 900;
   line-height: 4rem;
 }
@@ -141,7 +140,7 @@ header .content h1 span {
 p {
   font-size: 1.3rem;
   margin-bottom: 2rem;
-  font-weight: 400;
+  font-weight: 600;
   color: #46257f;
 }
 
@@ -178,8 +177,50 @@ section .header,
   color: #46257f;
   text-align: center;
   font-size: 2.25rem;
-  font-weight: 600;
+  font-weight: 900;
 }
+
+.profissionais{
+  position: relative;
+  padding-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+
+.profissionais img {
+  max-width: 700px;
+  width: 100%;
+  margin: auto;
+}
+
+.profissionais img:hover {
+  transform: scale(1.02);
+}
+
+.profissionais .content h1 {
+  color: #46257f;
+  margin-bottom: 1rem;
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 4rem;
+}
+.profissionais .content-left h1 {
+  color: #46257f;
+  margin-bottom: 1rem;
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 4rem;
+}
+
+.profissionais .content{
+  margin-right: 25px;
+}
+.profissionais .content-left{
+  margin-left: 25px;
+}
+
 
 .features {
   margin-top: 2rem;
