@@ -105,6 +105,16 @@
   .cta-button {
     width: 100%;
   }
+
+  .sale-popup{
+    display: none !important;
+  } 
+
+  .whatsapp-float{
+     background: #25d365a2;
+       border-radius: 50px;
+       color: #6a1b9a;
+  }
 }
 
 /* Responsividade */
