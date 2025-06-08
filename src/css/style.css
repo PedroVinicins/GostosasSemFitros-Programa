@@ -46,7 +46,7 @@ header {
   position: relative;
   padding-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   align-items: center;
   gap: 2rem;
     background: url(/src/css/img/top-header.png) no-repeat center/cover;
@@ -194,7 +194,7 @@ p {
 
 
 .container.question{
- margin: 0 auto;
+  margin: 0 auto;
   padding: 4rem 2rem;
   background-color: #f9f9f9;
   border-radius: 15px;
@@ -222,14 +222,6 @@ p {
   height: 4px;
   background: linear-gradient(90deg, #ff7eb3, #ff758c);
   border-radius: 2px;
-}
-
-.features {
-  margin-top: 2rem;
-  gap: 2rem;
-  width: 100%;
-  padding: 2rem 1rem;
-  grid-template-columns: 1fr;
 }
 
 .features .card {
@@ -577,10 +569,10 @@ li span {
     padding: 1rem 2rem;
     font-size: 1.2rem;
     border-radius: 50px;
-    margin-top: 1rem;
+    margin-top: 3rem;
     font-weight: 700;
     cursor: pointer;
-    width: 105%;
+    width: 50%;
     transition: all 0.3s ease;
   }
 
