@@ -1,0 +1,138 @@
+.pricing-tower {
+  max-width: 800px;
+  margin: 4rem auto;
+  background: #ffffff;
+  color: #4a148c;
+  font-weight: 600;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.336);
+  font-family: "Inter", sans-serif;
+}
+
+.pricing-tower h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.pricing-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.pricing-list li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  padding: 1rem 0;
+}
+
+li span {
+  font-weight: bold;
+  color: #46257f;
+  font-size: 1rem;
+}
+
+.value {
+  font-weight: bold;
+  color: #ff0000;
+  font-size: 1.5rem;
+  text-decoration: line-through;
+}
+
+.price-summary {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.price-summary p {
+  margin: 0.5rem 0;
+  font-size: 2rem;
+  color: red;
+}
+
+.price-summary .offer {
+  font-size: 2.7rem;
+  color: #18c020;
+  font-weight: bold;
+}
+
+.bonus,
+.guarantee,
+.urgency {
+  background: #f9f4ff;
+  border-left: 5px solid #6a1b9a;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+}
+
+.bonus .small,
+.urgency p,
+.guarantee p {
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+
+.urgency {
+  background: #fff4f4;
+  border-left-color: #c62828;
+}
+
+.urgency h3 {
+  color: #c62828;
+}
+
+.guarantee {
+  background: #f1fff2;
+  border-left-color: #2e7d32;
+}
+
+.guarantee h3 {
+  color: #2e7d32;
+}
+
+.cta {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.cta button {
+  background: linear-gradient(to right, #bc02d4, #46257f);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  margin-top: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.cta-button {
+  background: linear-gradient(to right, #bc02d4, #46257f);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  margin-top: 3rem;
+  font-weight: 700;
+  cursor: pointer;
+  width: 50%;
+  transition: all 0.3s ease;
+}
+
+.cta button:hover {
+  background: #4a148c;
+}
+
+.cta p {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #555;
+}

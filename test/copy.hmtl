@@ -1,0 +1,386 @@
+  <body>
+    <!-- 1. Headline -->
+    <header class="hero">
+      <div class="hero-content">
+        <img src="/src/css/img/logo.avif" alt="gostosasemfiltros" />
+        <h1>GOSTOSAS SEM FILTROS</h1>
+        <span>Transforme seu corpo real no corpo que você AMA habitar</span>
+
+        <!-- 2. Subheadline -->
+        <p>
+          Você não precisa passar fome nem viver na academia para se sentir
+          linda, sexy e confiante no seu próprio corpo. Descubra o equilíbrio
+          entre saúde e autoestima.
+        </p>
+
+        <a
+          href="https://mailchi.mp/57d3c9348df2/inscrio-para-lista-de-interesse-gsf"
+        >
+          <button class="cta-button">QUERO ME INSCREVER AGORA</button>
+        </a>
+      </div>
+    </header>
+
+    <!-- 3. O que é o programa? (Oferta direta) -->
+    <section class="container question">
+      <div class="main-manifesto">
+        <h2 class="header">O QUE É O PROGRAMA?</h2>
+        <p>
+          O programa mensal de transformação corporal feito por uma
+          nutricionista e uma personal trainer que entendem a sua rotina,
+          respeitam seu corpo e acreditam que a saúde precisa ser gostosa de
+          viver.
+        </p>
+        <p>
+          Com treinos inteligentes para fazer em casa ou na academia,
+          alimentação real e sem terrorismo alimentar, 4 consultas online em
+          grupo com as profissionais e uma comunidade com mulheres como você -
+          MULHERES REAIS.
+        </p>
+      </div>
+      <img src="/src/css/img/fot 5.png" alt="Foto exemplo" />
+    </section>
+
+    <!-- Manifesto emocional -->
+    <section class="container manifesto">
+      <div class="main-manifesto">
+        <p class="msg msg-right">Você não precisa de um corpo perfeito.</p>
+        <p class="msg msg-right">
+          Precisa de um corpo possível, gostoso, funcional — e seu.
+        </p>
+        <p class="msg msg-right">Não estamos aqui pra te moldar.</p>
+        <p class="msg msg-right">
+          Estamos aqui pra te mostrar o que acontece quando você se alimenta com
+          amor, treina com prazer e é guiada com verdade.
+        </p>
+        <p class="msg msg-right">Chega de culpa.</p>
+        <p class="msg msg-right">
+          Chega de seguir influencer que te deixa com a mente adoecida.
+        </p>
+        <p class="msg msg-right">
+          Chega de cortar arroz pra caber num padrão impossível.
+        </p>
+        <p class="msg msg-right">
+          Sinta-se GOSTOSA, sem filtros e sem desculpas.
+        </p>
+      </div>
+    </section>
+
+    <section class="container beneficios">
+      <ul class="benefits-list">
+        <h2 class="header">O QUE VOCÊ VAI CONQUISTAR</h2>
+        <li>Olhar no espelho e amar o que vê</li>
+        <li>Alimentação prazerosa e treinos eficientes</li>
+        <li>Mais energia no dia a dia e menos culpa</li>
+        <li>Liberdade para vestir o que quiser com confiança</li>
+        <li>Acompanhamento de profissionais que realmente entendem você</li>
+        <li>Comunidade acolhedora de mulheres reais</li>
+        <li>Resultados consistentes com estratégias sustentáveis</li>
+      </ul>
+
+      <div class="features">
+        <div class="card">
+          <span><i class="ri-question-mark"></i></span>
+          <h4>O que é o programa?</h4>
+          <p>
+            Um método mensal de transformação corporal desenvolvido por
+            especialistas que respeitam sua individualidade. Com treinos
+            inteligentes (para casa ou academia), alimentação equilibrada, 4
+            consultas online em grupo e uma comunidade de mulheres reais
+            apoiando umas às outras.
+          </p>
+          <a href="#">Saiba mais <i class="ri-arrow-right-line"></i></a>
+        </div>
+
+        <div class="card">
+          <span><i class="ri-hearts-line"></i></span>
+          <h4>Para quem é o programa?</h4>
+          <p>
+            Para mulheres que querem emagrecer com saúde, definir o corpo,
+            equilibrar a rotina e se livrar de dietas malucas. Ideal para quem
+            busca um corpo que seja gostoso de viver, não apenas de exibir.
+          </p>
+          <a href="#">É para mim? <i class="ri-arrow-right-line"></i></a>
+        </div>
+
+        <div class="card">
+          <span><i class="ri-calendar-2-line"></i></span>
+          <h4>Como funciona?</h4>
+          <p>
+            Treinos personalizados, plano alimentar flexível, grupo exclusivo no
+            WhatsApp, 4 encontros mensais online com especialistas (todos
+            gravados), além de bônus sobre autoestima, motivação e mudança de
+            hábitos.
+          </p>
+          <a href="#">Veja o método <i class="ri-arrow-right-line"></i></a>
+        </div>
+
+        <div class="card">
+          <span><i class="ri-home-heart-line"></i></span>
+          <h4>O que você vai conquistar?</h4>
+          <p>
+            Autoconfiança, relação saudável com comida, disposição,
+            acompanhamento profissional personalizado, rede de apoio e
+            resultados reais com um método feito para a vida real.
+          </p>
+          <a href="#">Transforme-se <i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container depoimentos">
+      <h2 class="header">DEPOIMENTOS REAIS</h2>
+      <div class="testimonials">
+        <div class="card">
+          <img src="images/depo1.jpg" alt="Depoimento 1" />
+          <p>
+            "Nunca imaginei que poderia me sentir tão bem. Aprendi a me
+            alimentar melhor, treino com prazer e finalmente me sinto linda no
+            meu próprio corpo!"
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/depo2.jpg" alt="Depoimento 2" />
+          <p>
+            "A comunidade me acolheu como nunca. Hoje tenho autoestima, energia
+            e um corpo que reflete quem eu realmente sou."
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/depo3.jpg" alt="Depoimento 3" />
+          <p>
+            "Depois de anos de dietas malucas, encontrei um método que respeita
+            meu corpo e minha rotina. Resultados incríveis em poucos meses!"
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/depo4.jpg" alt="Depoimento 4" />
+          <p>
+            "Os treinos são perfeitos para minha rotina. Finalmente encontrei um
+            programa que não exige que eu viva na academia."
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <a href="#" class="whatsapp-float"></a>
+
+
+    <section class="pricing-tower">
+      <h2>O que você recebe no programa:</h2>
+
+      <ul class="pricing-list">
+        <li>
+          <span>✅ Treinos personalizados no app + suporte técnico</span>
+          <span class="value">R$ 300,00</span>
+        </li>
+        <li>
+          <span
+            >✅ Planos alimentares completos por objetivos e preferências</span
+          >
+          <span class="value">+ R$ 300,00</span>
+        </li>
+        <li>
+          <span
+            >✅ Acesso ao grupo no WhatsApp com presença diária da equipe</span
+          >
+          <span class="value">Incalculável</span>
+        </li>
+        <li>
+          <span>✅ 4 encontros ao vivo com a personal e a nutri JUNTAS</span>
+          <span class="value">+ R$ 1.000,00</span>
+        </li>
+        <li>
+          <span>✅ Aulas bônus com especialistas convidadas</span>
+          <span class="value">Incalculável</span>
+        </li>
+        <li>
+          <span
+            >✅ PDFs extras, cronograma, calendário, checklists e apoio de
+            rotina</span
+          >
+          <span class="value">R$ 97,00</span>
+        </li>
+      </ul>
+
+      <div class="price-summary">
+        <p><strong>TOTAL REAL:</strong> Mais de R$ 1.000,00/mês</p>
+        <p class="offer">🔥 Hoje por apenas <strong>R$ 49,90</strong></p>
+        <small>*Valor fixado caso queira continuar nas próximas edições</small>
+      </div>
+
+      <div class="bonus">
+        <p><strong>Bônus Especial:</strong> Aula exclusiva:</p>
+        <em>“Como mudar seu corpo comendo melhor e sem neurose”</em>
+        <p class="small">
+          Para quem já se sabotou achando que comer menos era o único caminho.
+        </p>
+      </div>
+
+      <div class="guarantee">
+        <h3>✅ Garantia de 7 dias</h3>
+        <p>
+          Se em até 7 dias você sentir que esse não é o seu lugar, devolvemos o
+          valor investido. Sem burocracia.
+        </p>
+      </div>
+
+      <div class="urgency">
+        <h3>⚠️ Últimas vagas!</h3>
+        <p>
+          Inscrições com esse valor só até
+          <strong>23h de 13/06/2025</strong>.<br />
+          Depois, o valor volta para R$ 69,90/mês.<br />
+          <strong>50 vagas por turma.</strong> Perdeu? Só na próxima edição.
+        </p>
+      </div>
+
+      <a
+        class="cta"
+        href="https://mailchi.mp/57d3c9348df2/inscrio-para-lista-de-interesse-gsf"
+      >
+        <button>QUERO ME INSCREVER AGORA</button>
+      </a>
+    </section>
+
+    <section class="poliana-card">
+      <div class="foto-poliana">
+        <img
+          src="/src/css/img/Poliana Castro.jpg"
+          alt="Poliana - Nutricionista"
+        />
+      </div>
+      <div class="content-poliana">
+        <h1>Poliana: saúde com leveza e propósito</h1>
+        <p>
+          Poliana transforma a relação das mulheres com o corpo e a alimentação.
+          Sua missão vai além da estética: ela acredita em uma nutrição com
+          propósito, que respeita a individualidade e promove bem-estar
+          duradouro.
+          <br />
+          Com uma abordagem acolhedora e prática, ela conduz suas pacientes a
+          resultados reais, sustentáveis e com leveza — mostrando que é possível
+          cuidar de si sem neuras, sem culpa e com muito mais consciência.
+        </p>
+      </div>
+    </section>
+
+    <section class="ana-card">
+      <div class="content-ana">
+        <h1>A nutricionista que busca equilíbrio na alimentação</h1>
+        <p>
+          Com uma abordagem prática e humana, Ana Paula Bernardo ajuda suas
+          pacientes a atingirem resultados reais e sustentáveis, promovendo
+          prazer e consciência nas escolhas alimentares.
+          <br />
+          Nutricionista apaixonada por transformar vidas através da alimentação,
+          Ana é especialista em emagrecimento e ganho de massa muscular, com
+          formação robusta em diversos cursos de Nutrição. Ela acredita que
+          comer bem transcende o físico — é sobre saúde, bem-estar e encontrar
+          um equilíbrio que se encaixe na vida real de cada mulher real. Sem
+          extremismos alimentares, sem sentir culpa ao comer.
+        </p>
+      </div>
+      <div class="foto-ana">
+        <img src="/src/css/img/ana.JPG" alt="Ana Paula Bernardo" />
+      </div>
+    </section>
+
+    <footer class="container">
+      <div class="column">
+        <div class="logo">
+          <img src="/src/css/img/logo.avif" alt="Logo" />
+        </div>
+        <p>
+          Transformação corporal com respeito ao seu corpo e sua rotina. Método
+          desenvolvido por especialistas que realmente entendem mulheres reais.
+        </p>
+        <div class="socials">
+          <a href="#"><i class="ri-youtube-line"></i></a>
+          <a href="#"><i class="ri-instagram-line"></i></a>
+          <a href="#"><i class="ri-tiktok-line"></i></a>
+        </div>
+      </div>
+
+      <div class="column">
+        <h4>Contato</h4>
+        <a href="#">WhatsApp: (91) 98765-4321</a>
+        <a href="#">Instagram: @gostosasemfiltros</a>
+        <a href="#">E-mail: contato@gostosasemfiltros.com</a>
+      </div>
+
+      <div class="column">
+        <h4>Termos</h4>
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+        <a href="#">Garantia</a>
+      </div>
+    </footer>
+    <script src="/src/js/js.js"></script>
+  </body>
+
+
+  .manifesto-section {
+    background: #46257f;
+    color: white;
+    padding: 4rem 0;
+}
+
+.manifesto-grid {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+}
+
+.manifesto-item {
+    margin-bottom: 2.5rem;
+    position: relative;
+    padding-left: 2rem;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+.manifesto-item::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #ff7eb3;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.manifesto-item:nth-child(3n+1) {
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.manifesto-item:nth-child(3n+2) {
+    font-style: italic;
+}
+
+.manifesto-item:last-child {
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.manifesto-item:last-child::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, 
+        transparent 0%, 
+        rgba(255, 126, 179, 0.2) 50%, 
+        transparent 100%);
+    pointer-events: none;
+}

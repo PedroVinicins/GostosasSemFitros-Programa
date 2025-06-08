@@ -144,8 +144,9 @@ function initWhatsAppButton() {
   const floatBtn = document.createElement("a");
   floatBtn.href = "https://wa.me/SEUNUMERO?text=Olá%2C+quero+garantir+minha+vaga!";
   floatBtn.className = "whatsapp-float";
-  floatBtn.innerHTML = "💬 Fale conosco";
+  floatBtn.innerHTML = ' <i class="ri-whatsapp-line">Fale conosco</i>'; // Adicione um ícone se desejar
   document.body.appendChild(floatBtn);
+  
 
   // Configura todos os botões do WhatsApp
   document.querySelectorAll(".whatsapp-button").forEach(btn => {
