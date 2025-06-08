@@ -72,6 +72,68 @@ header .content h1 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Estilos para notificações de compra */
+.sale-popup {
+  position: fixed;
+  bottom: 20px;
+  left: 60%;
+  background: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+  font-weight: 600;
+  color: #46257f;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  animation: slideIn 0.5s forwards;
+  border-left: 4px solid #ff758c;
+}
+
+.sale-popup.fade-out {
+  animation: fadeOut 0.5s forwards;
+}
+
+.sale-popup span {
+  color: #ff758c;
+  font-size: 1.2em;
+}
+
+@keyframes slideIn {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { transform: translateX(0); opacity: 1; }
+  to { transform: translateX(100%); opacity: 0; }
+}
+
+/* Botão flutuante do WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #25D366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+}
+
 header .content span {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-text-fill-color: white;
@@ -565,7 +627,6 @@ li span {
 
 .price-summary {
   text-align: center;
- 
   margin-bottom: 2rem;
 }
 
@@ -655,6 +716,18 @@ li span {
   font-size: 0.95rem;
   color: #555;
 }
+
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 
 footer {

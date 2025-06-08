@@ -1,9 +1,23 @@
 // js.js
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Rolagem suave para os links com #
+  // Inicializa todas as funcionalidades
+  initSmoothScrolling();
+  initTestimonialHoverEffects();
+  initCTAButtonTracking();
+  initBenefitsListAnimation();
+  initScrollAnimations();
+  initCountdownTimer();
+  initFakeSalesNotifications();
+  initWhatsAppButton();
+  initHeadlineABTest();
+  initExitIntentCapture();
+});
+
+// 1. Rolagem Suave
+function initSmoothScrolling() {
   document.querySelectorAll('a[href^="#"]').forEach(link => {
-    link.addEventListener("click", function (e) {
+    link.addEventListener("click", function(e) {
       e.preventDefault();
       const target = document.querySelector(this.getAttribute("href"));
       if (target) {
@@ -11,8 +25,11 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+}
 
-    const testimonialCards = document.querySelectorAll('.testimonials .card');
+// 2. Efeitos de Hover nos Depoimentos
+function initTestimonialHoverEffects() {
+  const testimonialCards = document.querySelectorAll('.testimonials .card');
   testimonialCards.forEach(card => {
     card.addEventListener('mouseenter', () => {
       card.style.transform = 'translateY(-5px)';
@@ -24,22 +41,29 @@ document.addEventListener("DOMContentLoaded", () => {
       card.style.boxShadow = '0 5px 15px rgba(0,0,0,0.05)';
     });
   });
+}
 
-  // Botão "Quero me inscrever agora" com rolagem para o final da página
+// 3. Rastreamento de Botões CTA
+function initCTAButtonTracking() {
   document.querySelectorAll(".cta, .cta-button").forEach(btn => {
     btn.addEventListener("click", () => {
       console.log("Botão de inscrição clicado!");
+      // Aqui você pode adicionar tracking do Google Analytics ou Facebook Pixel
     });
   });
+}
 
-    const benefitItems = document.querySelectorAll('.benefits-list li');
+// 4. Animação da Lista de Benefícios
+function initBenefitsListAnimation() {
+  const benefitItems = document.querySelectorAll('.benefits-list li');
   benefitItems.forEach((item, index) => {
-    // Adiciona um atraso para criar um efeito sequencial
     item.style.animationDelay = `${index * 0.1}s`;
     item.classList.add('animate-fade-in');
   });
+}
 
-  // Animações leves ao rolar a página
+// 5. Animações ao Rolar a Página
+function initScrollAnimations() {
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach(entry => {
@@ -52,13 +76,17 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 
   document.querySelectorAll(".card, .msg, .pricing-list li").forEach(el => {
-    el.classList.add("hidden"); // CSS: opacity: 0; transform: translateY(20px);
+    el.classList.add("hidden");
     observer.observe(el);
   });
+}
 
-  // Contagem regressiva para a urgência
+// 6. Contagem Regressiva para Oferta
+function initCountdownTimer() {
   const deadline = new Date("2025-06-13T23:00:00");
   const countdownElement = document.querySelector(".urgency p");
+
+  if (!countdownElement) return;
 
   function updateCountdown() {
     const now = new Date();
@@ -81,8 +109,49 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
   }
 
-  if (countdownElement) {
-    setInterval(updateCountdown, 1000);
-    updateCountdown(); // primeira chamada
+  setInterval(updateCountdown, 1000);
+  updateCountdown();
+}
+
+// 7. Notificações de Compra Falsas (Social Proof)
+function initFakeSalesNotifications() {
+  const cities = ["São Paulo", "Rio de Janeiro", "Belo Horizonte", "Brasília", "Curitiba", "Porto Alegre", "Salvador", "Fortaleza", "Recife", "Manaus"];
+  
+  function showFakeSale() {
+    const randomCity = cities[Math.floor(Math.random() * cities.length)];
+    const notification = document.createElement("div");
+    notification.className = "sale-popup";
+    notification.innerHTML = `
+      <span>🔥</span> Alguém de ${randomCity} acabou de se inscrever!
+    `;
+    document.body.appendChild(notification);
+    
+    setTimeout(() => {
+      notification.classList.add("fade-out");
+      setTimeout(() => notification.remove(), 500);
+    }, 5000);
   }
-});
+
+  // Mostra a primeira notificação após 15 segundos
+  setTimeout(showFakeSale, 15000);
+  // Depois mostra a cada 25-45 segundos aleatoriamente
+  setInterval(showFakeSale, Math.random() * 20000 + 35000);
+}
+
+// 8. Botão Flutuante do WhatsApp
+function initWhatsAppButton() {
+  // Cria o botão flutuante
+  const floatBtn = document.createElement("a");
+  floatBtn.href = "https://wa.me/SEUNUMERO?text=Olá%2C+quero+garantir+minha+vaga!";
+  floatBtn.className = "whatsapp-float";
+  floatBtn.innerHTML = "💬 Fale conosco";
+  document.body.appendChild(floatBtn);
+
+  // Configura todos os botões do WhatsApp
+  document.querySelectorAll(".whatsapp-button").forEach(btn => {
+    btn.addEventListener("click", () => {
+      window.open(floatBtn.href, "_blank");
+      console.log("Clique no WhatsApp registrado");
+    });
+  });
+}
