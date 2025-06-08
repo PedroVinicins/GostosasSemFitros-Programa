@@ -342,7 +342,6 @@ p {
   margin-left: -1rem;
 }
 
-/* Efeitos decorativos */
 .container.manifesto::before {
   content: "";
   position: absolute;
@@ -365,24 +364,48 @@ p {
   z-index: 0;
 }
 
-
-
-/* Estilos para a seção de benefícios */
 .container.beneficios {
-  margin: 0 auto;
-  padding: 4rem 2rem;
-  background-color: #f9f9f9;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 4rem auto;
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #fdf2ff 0%, #f9f9f9 100%);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  position: relative;
+  overflow: hidden;
+  max-width: 1200px;
+}
+
+.container.beneficios::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(255,117,140,0.15) 0%, rgba(255,117,140,0) 70%);
+  z-index: 0;
+}
+
+.container.beneficios::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, rgba(113,58,180,0.1) 0%, rgba(113,58,180,0) 70%);
+  z-index: 0;
 }
 
 .beneficios .header {
   text-align: center;
-  font-size: 2.5rem;
-  color: #2c3e50;
-  margin-bottom: 2.5rem;
+  font-size: 2.8rem;
+  color: #46257f;
+  margin-bottom: 3rem;
   position: relative;
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
+  font-weight: 800;
+  z-index: 1;
 }
 
 .beneficios .header::after {
@@ -391,44 +414,84 @@ p {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 100px;
-  height: 4px;
+  width: 150px;
+  height: 5px;
   background: linear-gradient(90deg, #ff7eb3, #ff758c);
-  border-radius: 2px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(255, 126, 179, 0.3);
 }
 
 .benefits-list {
   list-style-type: none;
   padding: 0;
-  max-width: 1200px;
+  max-width: 800px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .benefits-list li {
-  font-size: 1.2rem;
-  padding: 1rem 1.5rem;
-  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  padding: 1.25rem 2rem;
+  margin-bottom: 1.25rem;
   background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  color: #46257f;
+  font-weight: 600;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   position: relative;
-  padding-left: 3rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding-left: 4rem;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-left: 4px solid transparent;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.benefits-list li.animate-fade-in {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .benefits-list li:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #ff758c;
 }
 
 .benefits-list li::before {
-  content: "✔";
+  content: "✓";
   position: absolute;
-  left: 1rem;
-  color: #ff758c;
+  left: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(135deg, #ff7eb3, #ff758c);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 2px 5px rgba(255, 117, 140, 0.3);
 }
 
+
+@media (max-width: 480px) {
+  .container.beneficios {
+    padding: 2.5rem 1rem;
+  }
+  
+  .beneficios .header {
+    font-size: 1.8rem;
+  }
+  
+  .benefits-list li {
+    font-size: 1rem;
+    padding: 0.8rem 1rem 0.8rem 3rem;
+  }
+}
 
 .testimonials {
   display: flex;

@@ -102,15 +102,38 @@
     margin: 0;
   }
 
-  .benefits-list li {
-    font-size: 1rem;
-    padding: 0.8rem 1rem 0.8rem 2.5rem;
-  }
-
   .cta-button {
     width: 100%;
   }
 }
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container.beneficios {
+    padding: 3rem 1.5rem;
+    margin: 2rem auto;
+    border-radius: 15px;
+  }
+  
+  .beneficios .header {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .benefits-list li {
+    font-size: 1.1rem;
+    padding: 1rem 1.5rem 1rem 3.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .benefits-list li::before {
+    left: 1rem;
+    width: 25px;
+    height: 25px;
+    font-size: 0.9rem;
+  }
+}
+
 
 @media (max-width: 600px) {
   footer {
