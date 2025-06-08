@@ -459,12 +459,13 @@ p {
 .pricing-tower {
   max-width: 800px;
   margin: 4rem auto;
-  background: #fff;
-  color: #333;
+  background: #ffffff;
+  color: #4a148c;
+  font-weight: 600;
   border-radius: 16px;
   padding: 2rem;
-  box-shadow: 0 0 20px rgba(0,0,0,0.1);
-  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.336);
+  font-family: 'Inter', sans-serif;
 }
 
 .pricing-tower h2 {
@@ -496,6 +497,7 @@ li span {
   font-weight: bold;
   color: #ff0000;
   font-size: 1.5rem;
+    text-decoration: line-through;
 }
 
 .price-summary {
