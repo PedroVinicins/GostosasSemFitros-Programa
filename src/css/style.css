@@ -54,33 +54,33 @@ header {
 
 header .content h4 {
   margin-bottom: 1rem;
-  color: #46257f;
+  color: #ffffff;
   font-size: 1rem;
   font-weight: 600;
 }
 
 .content img{
   display: flex;
-  left: 100px;
   position: relative;
 }
 
 header .content h1 {
   color: #ffffff;
-  margin-bottom: 1rem;
-  margin-left: 1rem;
   font-size: 4rem;
   font-weight: 900;
-  line-height: 4rem;
+  line-height: 4rem !important;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-header .content h1 span {
+header .content span {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 3px #ffffff;
+  -webkit-text-stroke: 1px #ffffff;
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 2rem !important;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
 header p {
   font-size: 1.3rem;
   margin-bottom: 2rem;
@@ -106,87 +106,128 @@ section .header,
 }
 
 
-.poliana-card{
-  display: grid;
-  grid-template-columns: repeat(2 ,1fr);
-  align-items: center;
+/* Estilos gerais para ambas as seções */
+.poliana-card, .ana-card {
+  display: flex;
+  max-width: 1700px;
+  margin: 4rem auto;
+  padding: 2rem;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  position: relative;
 }
 
-.foto-poliana{
-  max-width: 900px;
+/* Layout específico para cada card */
+.poliana-card {
+  flex-direction: row;
+}
+
+.ana-card {
+  flex-direction: row;
+}
+
+/* Estilos para as fotos */
+.foto-poliana, .foto-ana {
+  flex: 1;
+  min-width: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease;
+}
+
+.foto-poliana:hover, .foto-ana:hover {
+  transform: scale(1.02);
+}
+
+.foto-poliana img, .foto-ana img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
-.content-poliana h1{
-   color: #46257f;
-  margin-bottom: 1rem;
-  font-size: 4rem;
-  font-weight: 900;
-  line-height: 4rem;
+/* Estilos para o conteúdo */
+.content-poliana, .content-ana {
+  flex: 1;
+  padding: 0 3rem;
+  position: relative;
 }
 
-.content-poliana p{
-  color: #46257f;
-  margin-left: 12px;
-  margin-bottom: 1rem;
+h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
   font-weight: 700;
-  line-height: 2rem;
 }
 
-.ana-card{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
+p {
+ font-size: 1.3rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: #46257f;
 }
 
-.foto-ana{
-  max-width: 900px;
-  width: 100%;
-}
-
-.blur {
+/* Efeitos decorativos */
+.poliana-card::before {
+  content: "";
   position: absolute;
-  box-shadow: 0 0 1000px 400px #debbf7;
-  z-index: -100;
+  top: -50px;
+  left: -50px;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(255,126,179,0.1) 0%, rgba(255,255,255,0) 70%);
 }
 
-.logo{
-  display: flex;
+.ana-card::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(255,117,140,0.1) 0%, rgba(255,255,255,0) 70%);
+}
+
+
+.container.question{
+ margin: 0 auto;
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.question .header{
+   text-align: center;
+  font-size: 2.8rem;
+  color: #2c3e50;
+  margin-bottom: 3rem;
   position: relative;
-
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.logo img{
-  display: flex;
-  position: relative;
-  top: -120px;
-  justify-content: center;
-  align-items: center;
-  width: 400px;
-}
-
-.content-ana h1{
-  color: #46257f;
-  margin-bottom: 1rem;
-  font-size: 4rem;
-  font-weight: 900;
-    margin-left: 12px;
-  line-height: 4rem;
-}
-.content-ana p{
-  color: #46257f;
-  margin-left: 12px;
-  margin-bottom: 1rem;
   font-weight: 700;
-  line-height: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 
+.question .header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #ff7eb3, #ff758c);
+  border-radius: 2px;
 }
 
 .features {
   margin-top: 2rem;
   gap: 2rem;
+  width: 100%;
   padding: 2rem 1rem;
   grid-template-columns: 1fr;
 }
@@ -198,25 +239,18 @@ section .header,
   border: 2px solid transparent;
   border-radius: 15px;
   transition: all 0.3s ease;
-  border-color: #8c3194;
+  border-color: #ff7eb3;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .features .card span {
   display: inline-block;
-  background-color: #bb02d4c0;
+  background-color: #ff7eb3;
   padding: 2px 9px;
   margin-bottom: 1rem;
   font-size: 1.75rem;
   color: #fff;
   border-radius: 5px;
-}
-
-.features .card h4 {
-  margin-bottom: 0.5rem;
-  color: #000000;
-  font-size: 1.2rem;
-  font-weight: 600;
 }
 
 .features .card p {
@@ -230,7 +264,7 @@ section .header,
 }
 
 .features .card a {
-  color: #fff;
+  color: #000000;
   transition: all 0.3s ease;
 }
 
@@ -242,85 +276,163 @@ section .header,
   font-weight: 600;
 }
 
-.sub-header {
-  max-width: 600px;
-  margin: auto;
+/* Estilos para a seção de manifesto */
+.container.manifesto {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.manifesto .header {
   text-align: center;
-  color: #ffffff;
+  font-size: 2.8rem;
+  color: #2c3e50;
+  margin-bottom: 3rem;
+  position: relative;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.manifesto .header::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #ff7eb3, #ff758c);
+  border-radius: 2px;
 }
 
 .main-manifesto {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
+  margin: 0 auto;
 }
-
-
-.img-msg{
-  display: flex ;
-  width: 95%;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-}
-
-.img-msg img{
-  width: 40%;
-}
-
 
 .msg {
+  padding: 2rem;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  border-radius: 12px;
   position: relative;
-  padding: 1rem;
-  border-radius: 10px;
-  max-width: 100%;
-  color: white;
-  transition: 0.8s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Mensagem enviada (direita) */
+.msg:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
 .msg-right {
-  background-color: #46257f;
   align-self: flex-end;
-  width: 700px;
-  color: #ffffff;
-  z-index: 1000;
-   top: 90px;
-   left: 0;
+  background-color: #f8f9fa;
+  border-left: 5px solid #ff758c;
+  margin-right: -1rem;
 }
-/* Mensagem recebida (esquerda) */
+
 .msg-left {
-  background-color: #46257f;
-  color: #ffffff;
-   width: 700px;
-   z-index: 1000;
-   position: relative;
-   top: -90px;
-   left: 0;
+  align-self: flex-start;
+  background-color: #fff;
+  border-right: 5px solid #ff7eb3;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  margin-left: -1rem;
 }
 
-.msg-right:hover {
-  border: 1px solid rgb(255, 0, 242);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transform: scale(1.02);
+/* Efeitos decorativos */
+.container.manifesto::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(255,126,179,0.1) 0%, rgba(255,255,255,0) 70%);
+  z-index: 0;
 }
 
-.msg-left:hover {
-  border: 1px solid white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transform: scale(1.02);
+.container.manifesto::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: -50px;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(255,117,140,0.1) 0%, rgba(255,255,255,0) 70%);
+  z-index: 0;
+}
+
+
+
+/* Estilos para a seção de benefícios */
+.container.beneficios {
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.beneficios .header {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 2.5rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.beneficios .header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #ff7eb3, #ff758c);
+  border-radius: 2px;
+}
+
+.benefits-list {
+  list-style-type: none;
+  padding: 0;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .benefits-list li {
-  outline: none;
-   border: 1px solid white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  padding: 0.5rem 1.2rem;
-  color: #46257f;
-  font-size: xx-large;
-  font-weight: 700;
-  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  position: relative;
+  padding-left: 3rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.benefits-list li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.benefits-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 1rem;
+  color: #ff758c;
+  font-weight: bold;
+}
+
 
 .testimonials {
   display: flex;
@@ -378,24 +490,33 @@ section .header,
   padding: 1rem 0;
 }
 
+li span {
+    font-weight: bold;
+  color: #46257f;
+  font-size: 1rem;
+}
+
 .value {
   font-weight: bold;
-  color: #6a1b9a;
+  color: #ff0000;
+  font-size: 1.5rem;
 }
 
 .price-summary {
   text-align: center;
+ 
   margin-bottom: 2rem;
 }
 
 .price-summary p {
   margin: 0.5rem 0;
-  font-size: 1.2rem;
+  font-size: 2rem;
+  color: red;
 }
 
 .price-summary .offer {
-  font-size: 1.6rem;
-  color: #2e7d32;
+  font-size: 2.7rem;
+  color: #18c020;
   font-weight: bold;
 }
 
@@ -459,7 +580,7 @@ section .header,
     margin-top: 1rem;
     font-weight: 700;
     cursor: pointer;
-    width: 100%;
+    width: 105%;
     transition: all 0.3s ease;
   }
 
@@ -472,18 +593,6 @@ section .header,
   margin-top: 1rem;
   font-size: 0.95rem;
   color: #555;
-}
-
-/* Responsivo */
-@media (max-width: 600px) {
-  .pricing-list li {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .pricing-list .value {
-    margin-top: 0.5rem;
-  }
 }
 
 
