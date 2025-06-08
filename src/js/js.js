@@ -12,6 +12,19 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+    const testimonialCards = document.querySelectorAll('.testimonials .card');
+  testimonialCards.forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      card.style.transform = 'translateY(-5px)';
+      card.style.boxShadow = '0 10px 20px rgba(0,0,0,0.1)';
+    });
+    
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'translateY(0)';
+      card.style.boxShadow = '0 5px 15px rgba(0,0,0,0.05)';
+    });
+  });
+
   // Botão "Quero me inscrever agora" com rolagem para o final da página
   document.querySelectorAll(".cta, .cta-button").forEach(btn => {
     btn.addEventListener("click", () => {
