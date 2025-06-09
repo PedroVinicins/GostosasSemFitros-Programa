@@ -14,6 +14,57 @@ document.addEventListener("DOMContentLoaded", () => {
   initExitIntentCapture();
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  const carousel = document.getElementById('carousel');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const dotsContainer = document.getElementById('carousel-dots');
+  const cards = document.querySelectorAll('.testimonial-card');
+  const cardCount = cards.length;
+  let currentIndex = 0;
+  
+  // Create dots
+  cards.forEach((_, index) => {
+    const dot = document.createElement('div');
+    dot.classList.add('dot');
+    if (index === 0) dot.classList.add('active');
+    dot.addEventListener('click', () => goToSlide(index));
+    dotsContainer.appendChild(dot);
+  });
+  
+  const dots = document.querySelectorAll('.dot');
+  
+  function updateCarousel() {
+    const cardWidth = cards[0].offsetWidth + 30; // card width + gap
+    carousel.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+    
+    // Update dots
+    dots.forEach((dot, index) => {
+      dot.classList.toggle('active', index === currentIndex);
+    });
+  }
+  
+  function goToSlide(index) {
+    currentIndex = index;
+    updateCarousel();
+  }
+  
+  prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : cardCount - 1;
+    updateCarousel();
+  });
+  
+  nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex < cardCount - 1) ? currentIndex + 1 : 0;
+    updateCarousel();
+  });
+  
+  // Auto-rotate (optional)
+  // setInterval(() => nextBtn.click(), 5000);
+  
+  // Responsive adjustments
+  window.addEventListener('resize', updateCarousel);
+});
 // 1. Rolagem Suave
 function initSmoothScrolling() {
   document.querySelectorAll('a[href^="#"]').forEach(link => {

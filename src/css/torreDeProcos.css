@@ -1,138 +1,139 @@
-.pricing-tower {
-  max-width: 800px;
-  margin: 4rem auto;
-  background: #ffffff;
-  color: #4a148c;
-  font-weight: 600;
-  border-radius: 16px;
-  padding: 2rem;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.336);
-  font-family: "Inter", sans-serif;
+/* Mobile-First Pricing Section */
+.pricing-section {
+  background: white;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px 15px;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-size: 14px;
 }
 
-.pricing-tower h2 {
+.pricing-section .section-title {
+  color: #000000;
   text-align: center;
-  font-size: 2rem;
-  margin-bottom: 2rem;
+  font-size: 20px;
+  margin: 0 0 15px 0;
+  font-weight: 700;
+  padding-bottom: 10px;
+  position: relative;
 }
 
-.pricing-list {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 2rem;
+.pricing-section .section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, #8a2be2, #9370db);
 }
 
-.pricing-list li {
+/* Compact Pricing Table */
+.pricing-table {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px 10px;
+  margin-bottom: 15px;
+}
+
+.pricing-feature, .pricing-value {
+  padding: 6px 0;
+  line-height: 1.3;
+}
+
+.pricing-feature {
+  color: #000000;
+  width: 240px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.pricing-value {
+  color: #ff0000;
+  font-weight: 600;
+  text-align: right;
+  min-width: 90px;
+}
+
+/* Total Row */
+.total-row {
+  grid-column: 1 / -1;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #eee;
-  padding: 1rem 0;
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid #8a2be2;
+  font-size: 15px;
 }
 
-li span {
-  font-weight: bold;
-  color: #46257f;
-  font-size: 1rem;
-}
-
-.value {
-  font-weight: bold;
-  color: #ff0000;
-  font-size: 1.5rem;
-  text-decoration: line-through;
-}
-
-.price-summary {
+/* Offer Section */
+.pricing-offer {
+  background: linear-gradient(135deg, #1a0a2a, #2d1a4a);
   text-align: center;
-  margin-bottom: 2rem;
-}
-
-.price-summary p {
-  margin: 0.5rem 0;
-  font-size: 2rem;
-  color: red;
-}
-
-.price-summary .offer {
-  font-size: 2.7rem;
-  color: #18c020;
-  font-weight: bold;
-}
-
-.bonus,
-.guarantee,
-.urgency {
-  background: #f9f4ff;
-  border-left: 5px solid #6a1b9a;
-  padding: 1rem;
-  margin-bottom: 1.5rem;
+  padding: 15px;
   border-radius: 8px;
+  margin-top: 15px;
 }
 
-.bonus .small,
-.urgency p,
-.guarantee p {
-  font-size: 0.95rem;
-  margin-top: 0.5rem;
+.pricing-offer h3 {
+  color: #ffffff;
+  font-size: 16px;
+  margin: 0 0 8px 0;
+  text-transform: uppercase;
 }
 
-.urgency {
-  background: #fff4f4;
-  border-left-color: #c62828;
+.pricing-offer p {
+  color: #ffffff;
+  font-size: 15px;
+  margin: 0 0 5px 0;
+  line-height: 1.3;
 }
 
-.urgency h3 {
-  color: #c62828;
+.pricing-offer .price {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 700;
+  margin: 5px 0;
 }
 
-.guarantee {
-  background: #f1fff2;
-  border-left-color: #2e7d32;
+.pricing-offer .note {
+  color: #9e9e9e;
+  font-size: 11px;
+  font-style: italic;
 }
 
-.guarantee h3 {
-  color: #2e7d32;
-}
-
-.cta {
-  text-align: center;
-  margin-top: 2rem;
-}
-
-.cta button {
-  background: linear-gradient(to right, #bc02d4, #46257f);
+.pricing-offer button {
+  background: linear-gradient(135deg, #8a2be2, #9370db);
   color: white;
   border: none;
-  padding: 1rem 2rem;
-  font-size: 1.2rem;
-  border-radius: 50px;
-  margin-top: 1rem;
-  font-weight: 700;
-  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  margin-top: 10px;
   width: 100%;
-  transition: all 0.3s ease;
+  box-sizing: border-box;
 }
 
-.cta-button {
-  background: linear-gradient(to right, #bc02d4, #46257f);
-  color: white;
-  border: none;
-  padding: 1rem 2rem;
-  font-size: 1.2rem;
-  border-radius: 50px;
-  margin-top: 3rem;
-  font-weight: 700;
-  cursor: pointer;
-  width: 50%;
-  transition: all 0.3s ease;
-}
 
-.cta button:hover {
-  background: #4a148c;
-}
-
-.cta p {
-  margin-top: 1rem;
-  font-size: 0.95rem;
-  color: #555;
+@media (max-height: 700px) {
+  .pricing-section {
+    padding: 15px 10px;
+  }
+  
+  .pricing-table {
+    gap: 5px 8px;
+    font-size: 13px;
+  }
+  
+  .pricing-offer {
+    padding: 12px;
+  }
+  
+  .pricing-offer .price {
+    font-size: 24px;
+  }
 }
