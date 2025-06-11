@@ -81,8 +81,6 @@ p {
   box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
 }
 
-
-
 .hidden {
   opacity: 0;
   transform: translateY(20px);

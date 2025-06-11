@@ -4,7 +4,7 @@
   color: #fff;
   font-family: 'Poppins', sans-serif;
   padding: 20px 15px;
-  max-width: 100%;
+  max-width: 50%;
   margin: 0 auto;
   box-sizing: border-box;
   font-size: 14px;
@@ -113,7 +113,7 @@
   font-weight: 600;
   border-radius: 6px;
   margin-top: 12px;
-  width: 100%;
+  width: 60%;
   box-sizing: border-box;
 }
 

@@ -158,6 +158,11 @@
   color: #46257f;
 }
 
+  .pricing-section {
+    font-size: 15px;
+    max-width: 100%;
+  }
+
 
 }
 
@@ -239,8 +244,8 @@
 /* Versão para telas maiores */
 @media (min-width: 768px) {
   .pricing-section {
-    max-width: 600px;
     font-size: 15px;
+    max-width: 100%;
   }
 
   .pricing-section .section-title {
