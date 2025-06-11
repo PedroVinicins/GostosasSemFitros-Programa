@@ -1,4 +1,4 @@
-
+/* Versão Mobile-First Otimizada */
 @media (max-width: 600px) {
   .program-section {
     padding: 1rem;
@@ -8,59 +8,55 @@
   .section-title {
     font-size: 2rem;
     margin-bottom: 2rem;
+    text-align: center;
   }
 
   .program-description {
     font-size: 1.2rem;
   }
 
-  .program-section img {
-       width: 100%;
-  height: 300px;
-  object-fit: cover;
-  object-position: center;
+  .program-section img,
+  .how-it-works img,
+  .benefits-section img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
     margin-top: 1.5rem;
+    margin-bottom: 2rem;
   }
 
-  .manifesto-grid {
+  .manifesto-grid,
+  .benefits-list,
+  .bonus-section {
     grid-template-columns: 1fr;
   }
 
-  .manifesto-item {
-    padding: 1.5rem 1rem 1rem;
+  .manifesto-item,
+  .benefit-item,
+  .benefit-item1 {
+    padding: 1.5rem 1rem;
+    margin-bottom: 1rem;
   }
 
-  .manifesto-item::before {
-    top: -10px;
-    left: -10px;
+  .manifesto-item::before,
+  .feature-item::before,
+  .benefit-item1::before {
     width: 30px;
     height: 30px;
     font-size: 1rem;
   }
 
-  .target-section {
+  .target-section,
+  .testimonials-section,
+  .final-cta {
     padding: 2rem 0;
   }
 
-  .benefits-list {
-    grid-template-columns: 1fr;
-  }
-
-  .benefit-item {
-    padding: 1.5rem 1rem;
-  }
-
-  .how-it-works .container {
+  .how-it-works .container,
+  .benefits-section .container {
     flex-direction: column;
     gap: 2rem;
-  }
-
-  .how-it-works img {
-   width: 100%;
-  height: 300px;
-  object-fit: cover;
-  object-position: center;
-    margin-bottom: 1.5rem;
   }
 
   .features-list {
@@ -72,62 +68,13 @@
     margin-bottom: 1.5rem;
   }
 
-  .feature-item::before {
-    left: 1rem;
-    top: 1rem;
-    width: 35px;
-    height: 35px;
-    font-size: 1rem;
-  }
-
   .feature-item::after {
     left: 2.75rem;
     top: 2.75rem;
     height: calc(100% - 2.75rem + 1.5rem);
   }
 
-  .benefits-section .container {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .benefits-section img {
-    width: 100%;
-  height: 300px;
-  object-fit: cover;
-  object-position: center;
-    margin-bottom: 2rem;
-  }
-
-  .benefit-item1 {
-    padding: 1.5rem 1.5rem 1.5rem 4.5rem;
-    margin-bottom: 1rem;
-  }
-
-  .benefit-item1::before {
-    left: 1.5rem;
-    top: 1.5rem;
-    width: 40px;
-    height: 40px;
-    font-size: 1.1rem;
-  }
-
-  .benefit-item1::after {
-    right: 1.5rem;
-    top: 1.5rem;
-    font-size: 1.5rem;
-  }
-
-  .testimonials-section {
-    padding: 30px 0;
-  }
-
-  .container {
-    padding: 0 15px;
-  }
-
   .bonus-section {
-    grid-template-columns: 1fr;
     grid-template-areas:
       "title"
       "left"
@@ -136,8 +83,10 @@
     padding: 40px 5%;
   }
 
-  .container-left, .container-right {
-    padding: 20px;
+  .container,
+  .container-left,
+  .container-right {
+    padding: 0 15px;
   }
 
   .bonus-title {
@@ -149,32 +98,6 @@
     font-size: 1rem;
     margin-bottom: 20px;
   }
-
-  .bonus-section img {
-    height: auto;
-    width: 100%;
-  }
-
-
-  .testimonial-card {
-    min-width: 100%;
-  }
-  
-  .carousel-btn {
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
-  }
-  
-  .prev {
-    left: -15px;
-  }
-  
-  .next {
-    right: -15px;
-}
-}
-
 
   .testimonial-card {
     min-width: 100%;
@@ -192,7 +115,22 @@
     margin-bottom: 15px;
   }
 
-  .professional-row, .professional-row.reverse {
+  .carousel-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .prev {
+    left: -15px;
+  }
+
+  .next {
+    right: -15px;
+  }
+
+  .professional-row,
+  .professional-row.reverse {
     flex-direction: column !important;
     text-align: center;
     margin-bottom: 3rem;
@@ -213,13 +151,8 @@
   .professional-info p {
     font-size: 1rem;
   }
-
-  .final-cta {
-    padding: 2rem 0;
-  }
 }
 
-/* Further adjustments for very small screens (e.g., mobile landscape) */
 @media (max-width: 480px) {
   .section-title {
     font-size: 1.8rem;
@@ -229,10 +162,7 @@
     font-size: 1rem;
   }
 
-  .manifesto-item {
-    padding: 1rem 0.8rem 0.8rem;
-  }
-
+  .manifesto-item,
   .benefit-item {
     padding: 1rem 0.8rem;
   }
@@ -282,7 +212,7 @@
   }
 
   .carousel-btn {
-    display: none; /* Hide buttons on very small screens, rely on swipe */
+    display: none; /* Esconde botões em telas muito pequenas */
   }
 
   .testimonial-card {
@@ -301,5 +231,3 @@
     font-size: 0.9rem;
   }
 }
-
-
