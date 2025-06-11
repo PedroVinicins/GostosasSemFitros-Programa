@@ -1,0 +1,305 @@
+
+@media (max-width: 600px) {
+  .program-section {
+    padding: 1rem;
+    min-height: auto;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .program-description {
+    font-size: 1.2rem;
+  }
+
+  .program-section img {
+       width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+    margin-top: 1.5rem;
+  }
+
+  .manifesto-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .manifesto-item {
+    padding: 1.5rem 1rem 1rem;
+  }
+
+  .manifesto-item::before {
+    top: -10px;
+    left: -10px;
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+
+  .target-section {
+    padding: 2rem 0;
+  }
+
+  .benefits-list {
+    grid-template-columns: 1fr;
+  }
+
+  .benefit-item {
+    padding: 1.5rem 1rem;
+  }
+
+  .how-it-works .container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .how-it-works img {
+   width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .features-list {
+    padding: 0;
+  }
+
+  .feature-item {
+    padding: 1rem 1rem 1rem 4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .feature-item::before {
+    left: 1rem;
+    top: 1rem;
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+
+  .feature-item::after {
+    left: 2.75rem;
+    top: 2.75rem;
+    height: calc(100% - 2.75rem + 1.5rem);
+  }
+
+  .benefits-section .container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .benefits-section img {
+    width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+    margin-bottom: 2rem;
+  }
+
+  .benefit-item1 {
+    padding: 1.5rem 1.5rem 1.5rem 4.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .benefit-item1::before {
+    left: 1.5rem;
+    top: 1.5rem;
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+
+  .benefit-item1::after {
+    right: 1.5rem;
+    top: 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  .testimonials-section {
+    padding: 30px 0;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .bonus-section {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "left"
+      "right";
+    gap: 30px;
+    padding: 40px 5%;
+  }
+
+  .container-left, .container-right {
+    padding: 20px;
+  }
+
+  .bonus-title {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+
+  .bonus-description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .bonus-section img {
+    height: auto;
+    width: 100%;
+  }
+
+
+  .testimonial-card {
+    min-width: 100%;
+  }
+  
+  .carousel-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+  
+  .prev {
+    left: -15px;
+  }
+  
+  .next {
+    right: -15px;
+}
+}
+
+
+  .testimonial-card {
+    min-width: 100%;
+    padding: 20px;
+  }
+
+  .testimonial-card::before {
+    font-size: 40px;
+    top: 10px;
+    left: 10px;
+  }
+
+  .testimonial-text {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+
+  .professional-row, .professional-row.reverse {
+    flex-direction: column !important;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .professional-image-large img {
+    max-width: 100%;
+  }
+
+  .professional-info {
+    padding: 1rem;
+  }
+
+  .professional-name {
+    font-size: 1.5rem;
+  }
+
+  .professional-info p {
+    font-size: 1rem;
+  }
+
+  .final-cta {
+    padding: 2rem 0;
+  }
+}
+
+/* Further adjustments for very small screens (e.g., mobile landscape) */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .program-description {
+    font-size: 1rem;
+  }
+
+  .manifesto-item {
+    padding: 1rem 0.8rem 0.8rem;
+  }
+
+  .benefit-item {
+    padding: 1rem 0.8rem;
+  }
+
+  .feature-item {
+    padding: 0.8rem 0.8rem 0.8rem 3.5rem;
+  }
+
+  .feature-item::before {
+    left: 0.8rem;
+    top: 0.8rem;
+    width: 30px;
+    height: 30px;
+    font-size: 0.9rem;
+  }
+
+  .feature-item::after {
+    left: 2.25rem;
+    top: 2.25rem;
+    height: calc(100% - 2.25rem + 0.8rem);
+  }
+
+  .benefit-item1 {
+    padding: 1.2rem 1.2rem 1.2rem 4rem;
+  }
+
+  .benefit-item1::before {
+    left: 1.2rem;
+    top: 1.2rem;
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+
+  .benefit-item1::after {
+    right: 1.2rem;
+    top: 1.2rem;
+    font-size: 1.3rem;
+  }
+
+  .bonus-title {
+    font-size: 1.2rem;
+  }
+
+  .bonus-description {
+    font-size: 0.9rem;
+  }
+
+  .carousel-btn {
+    display: none; /* Hide buttons on very small screens, rely on swipe */
+  }
+
+  .testimonial-card {
+    padding: 15px;
+  }
+
+  .testimonial-text {
+    font-size: 0.85rem;
+  }
+
+  .professional-name {
+    font-size: 1.3rem;
+  }
+
+  .professional-info p {
+    font-size: 0.9rem;
+  }
+}
+
+
