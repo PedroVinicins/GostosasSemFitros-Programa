@@ -163,6 +163,19 @@
     max-width: 100%;
   }
 
+  
+  .pricing-offer button {
+    font-size: 16px;
+    padding: 14px;
+    width: 100%;
+  }
+.pricing-feature{
+  width: 120%;
+}
+
+.pricing-value{
+width: 100%;
+}
 
 }
 
