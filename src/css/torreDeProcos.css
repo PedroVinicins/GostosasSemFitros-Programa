@@ -117,27 +117,3 @@
   box-sizing: border-box;
 }
 
-/* Versão para telas maiores */
-@media (min-width: 768px) {
-  .pricing-section {
-    max-width: 600px;
-    font-size: 15px;
-  }
-
-  .pricing-section .section-title {
-    font-size: 22px;
-  }
-
-  .pricing-feature, .pricing-value {
-    font-size: 14px;
-  }
-
-  .pricing-offer .price {
-    font-size: 48px;
-  }
-
-  .pricing-offer button {
-    font-size: 16px;
-    padding: 14px;
-  }
-}

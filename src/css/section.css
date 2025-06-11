@@ -263,6 +263,10 @@ background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
   transition: all 0.3s ease;
 }
 
+.feature-item p{
+  color: white;
+}
+
 .feature-item:hover {
   background: rgba(255,255,255,0.15);
   transform: translateX(10px);
@@ -299,21 +303,7 @@ background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
   display: none;
 }
 
-@media (max-width: 768px) {
-  .how-it-works .container {
-    flex-direction: column;
-  }
-  
-  .how-it-works img {
-    width: 100%;
-    margin-bottom: 2rem;
-  }
-  
-  .how-it-works::before {
-    width: 100%;
-    opacity: 0.1;
-  }
-}
+
 
 /* Seção de Benefícios */
 .benefits-section {
@@ -439,36 +429,8 @@ background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
 .benefit-item1:nth-child(6)::after { content: "\F017"; } /* Grupo */
 .benefit-item1:nth-child(7)::after { content: "\F0A1"; } /* Resultados */
 
-/* Responsividade */
-@media (max-width: 992px) {
-  .benefits-section .container {
-    flex-direction: column;
-  }
-  
-  .benefits-section img {
-    width: 80%;
-    max-width: 500px;
-    margin-bottom: 3rem;
-  }
-}
 
-@media (max-width: 576px) {
-  .benefit-item1 {
-    padding: 1.5rem 1.5rem 1.5rem 5rem;
-  }
-  
-  .benefit-item1::before {
-    left: 1.2rem;
-    width: 40px;
-    height: 40px;
-    font-size: 1.1rem;
-  }
-  
-  .benefit-item1::after {
-    right: 1.2rem;
-    font-size: 1.5rem;
-  }
-}
+
 
 /* Base Styles */
 .testimonials-section {
@@ -556,21 +518,6 @@ background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
 
 .bonus-section img:hover {
   opacity: 1;
-}
-
-@media (max-width: 900px) {
-  .bonus-section {
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-      "title"
-      "left"
-      "right";
-  }
-.bonus-section img{
-  height: auto;
-  width: 100%;
-}
-
 }
 
 /* Carousel Container */
@@ -726,8 +673,6 @@ background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
   box-shadow: 0 15px 35px rgba(94, 53, 177, 0.2);
 }
 
-/* Responsive */
-
 
 .professional-row {
   display: flex;
@@ -772,26 +717,6 @@ background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
   font-size: 1.125rem;
   line-height: 1.8;
   color: #e2e2e2;
-}
-
-@media (max-width: 768px) {
-  .professional-row,
-  .professional-row.reverse {
-    flex-direction: column !important;
-    text-align: center;
-  }
-
-  .professional-image-large img {
-    max-width: 100%;
-  }
-
-  .professional-info {
-    padding: 1.5rem;
-  }
-
-  .professional-name {
-    font-size: 1.75rem;
-  }
 }
 
 /* Seção CTA Final */
@@ -917,25 +842,6 @@ background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
     }
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .cta-title {
-        font-size: 2rem;
-    }
-    
-    .cta-subtitle {
-        font-size: 1.2rem;
-    }
-    
-    .cta-features {
-        grid-template-columns: 1fr;
-    }
-    
-    .cta-button {
-        padding: 1rem 2rem;
-        font-size: 1rem;
-    }
-}
 
 .main-footer {
   background-color: #1c1c1e;

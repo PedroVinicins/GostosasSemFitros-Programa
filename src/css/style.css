@@ -42,11 +42,12 @@ h1 {
 }
 
 p {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   margin-bottom: 2rem;
   font-weight: 600;
   color: #46257f;
 }
+
 
 /* CONTAINER */
 .container {
@@ -80,20 +81,7 @@ p {
   box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
 }
 
-@media (max-width: 480px) {
-  .container.beneficios {
-    padding: 2.5rem 1rem;
-  }
 
-  .beneficios .header {
-    font-size: 1.8rem;
-  }
-
-  .benefits-list li {
-    font-size: 1rem;
-    padding: 0.8rem 1rem 0.8rem 3rem;
-  }
-}
 
 .hidden {
   opacity: 0;
