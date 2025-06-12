@@ -716,6 +716,19 @@ background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
   color: #e2e2e2;
 }
 
+.professionals-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 /* Seção CTA Final */
 .final-cta {
  background: linear-gradient(135deg, #c251b3, #302b63, #517aa1);
