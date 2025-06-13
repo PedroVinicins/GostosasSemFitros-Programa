@@ -91,3 +91,35 @@ p {
   opacity: 1;
   transform: translateY(0);
 }
+
+.btn-topo {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    background: linear-gradient(135deg, #c251b3, #302b63, #517aa1);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: none;
+    z-index: 999;
+}
+
+.confete {
+  position: fixed;
+  top: 0;
+  width: 8px;
+  height: 8px;
+  opacity: 0.8;
+  border-radius: 50%;
+  animation-name: cair;
+  animation-timing-function: linear;
+}
+
+@keyframes cair {
+  0% {transform: translateY(0) rotate(0deg);}
+  100% {transform: translateY(100vh) rotate(360deg);}
+}
+

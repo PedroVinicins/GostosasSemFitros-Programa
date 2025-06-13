@@ -163,12 +163,12 @@
     max-width: 100%;
   }
 
-  
-  .pricing-offer button {
-    font-size: 16px;
-    padding: 14px;
-    width: 100%;
+  .pricing-offer a {
+    font-size: 12px;
+    padding: 10px 5px;
+    width: 50%;
   }
+
 .pricing-feature{
   width: 120%;
 }

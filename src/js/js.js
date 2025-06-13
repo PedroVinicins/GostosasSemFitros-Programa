@@ -110,3 +110,53 @@ function inicializarRolagemSuave() {
         });
     });
 }
+
+function inicializarBotaoTopo() {
+    const botaoTopo = document.createElement("button");
+    botaoTopo.className = "btn-topo";
+    botaoTopo.textContent = "↑";
+    document.body.appendChild(botaoTopo);
+
+    window.addEventListener("scroll", () => {
+        botaoTopo.style.display = window.scrollY > 300 ? "block" : "none";
+    });
+
+    botaoTopo.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+}
+
+function solicitarPermissaoNotificacao() {
+    if ('Notification' in window) {
+        Notification.requestPermission().then(permission => {
+            if (permission === "granted") {
+                new Notification("Bem-vindo ao nosso site!", {
+                    body: "Fique de olho nas promoções exclusivas!",
+                    icon: "/favicon.ico"
+                });
+            }
+        });
+    }
+}
+
+function inicializarConfetes() {
+  function soltarConfetes() {
+    const confeteCount = 100;
+    for(let i=0; i<confeteCount; i++) {
+      const confete = document.createElement('div');
+      confete.className = 'confete';
+      confete.style.left = `${Math.random() * window.innerWidth}px`;
+      confete.style.animationDuration = `${Math.random() * 3 + 2}s`;
+      confete.style.backgroundColor = `hsl(${Math.random()*360}, 70%, 60%)`;
+      document.body.appendChild(confete);
+
+      setTimeout(() => confete.remove(), 5000);
+    }
+  }
+  document.getElementById('botao-confetes')?.addEventListener('click', soltarConfetes);
+}
+inicializarConfetes();
+
+ solicitarPermissaoNotificacao();
+
+inicializarBotaoTopo();
