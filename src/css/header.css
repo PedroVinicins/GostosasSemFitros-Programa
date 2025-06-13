@@ -20,7 +20,7 @@
   content: "";
   position: absolute;
   inset: 0; /* cobre toda a seção */
-  background: rgba(0, 0, 0, 0.5); /* opacidade da camada escura */
+  background: rgba(0, 0, 0, 0.377); /* opacidade da camada escura */
   z-index: 0;
 }
 

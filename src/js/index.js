@@ -112,7 +112,7 @@ function solicitarPermissaoNotificacao() {
             if (permission === "granted") {
                 new Notification("Bem-vindo ao nosso site!", {
                     body: "Fique de olho nas promoções exclusivas!",
-                    icon: "/favicon.ico"
+                    icon: "/src/css/img/logo/logo.avif"
                 });
             }
         });

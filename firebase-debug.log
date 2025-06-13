@@ -1,0 +1,60 @@
+[debug] [2025-06-13T04:25:17.198Z] ----------------------------------------------------------------------
+[debug] [2025-06-13T04:25:17.209Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\SrPedro\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-06-13T04:25:17.211Z] CLI Version:   14.7.0
+[debug] [2025-06-13T04:25:17.211Z] Platform:      win32
+[debug] [2025-06-13T04:25:17.211Z] Node Version:  v22.15.0
+[debug] [2025-06-13T04:25:17.212Z] Time:          Fri Jun 13 2025 01:25:17 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2025-06-13T04:25:17.213Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-13T04:25:17.859Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-13T04:25:17.860Z] > authorizing via signed-in user (pedrnxvini@gmail.com)
+[debug] [2025-06-13T04:25:17.860Z] [iam] checking project gostosas-sem-filtros for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2025-06-13T04:25:17.862Z] Checked if tokens are valid: true, expires at: 1749792013081
+[debug] [2025-06-13T04:25:17.862Z] Checked if tokens are valid: true, expires at: 1749792013081
+[debug] [2025-06-13T04:25:17.864Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/gostosas-sem-filtros:testIamPermissions [none]
+[debug] [2025-06-13T04:25:17.864Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/gostosas-sem-filtros:testIamPermissions x-goog-quota-user=projects/gostosas-sem-filtros
+[debug] [2025-06-13T04:25:17.864Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/gostosas-sem-filtros:testIamPermissions {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2025-06-13T04:25:19.256Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/gostosas-sem-filtros:testIamPermissions 200
+[debug] [2025-06-13T04:25:19.256Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/gostosas-sem-filtros:testIamPermissions {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2025-06-13T04:25:19.257Z] Checked if tokens are valid: true, expires at: 1749792013081
+[debug] [2025-06-13T04:25:19.258Z] Checked if tokens are valid: true, expires at: 1749792013081
+[debug] [2025-06-13T04:25:19.258Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/gostosas-sem-filtros [none]
+[debug] [2025-06-13T04:25:20.207Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/gostosas-sem-filtros 200
+[debug] [2025-06-13T04:25:20.207Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/gostosas-sem-filtros {"projectId":"gostosas-sem-filtros","projectNumber":"785644385804","displayName":"Gostosas Sem Filtros","name":"projects/gostosas-sem-filtros","resources":{"hostingSite":"gostosas-sem-filtros","realtimeDatabaseInstance":"gostosas-sem-filtros-default-rtdb"},"state":"ACTIVE","etag":"1_6904a63b-2a11-4bfc-b3d8-00a515e15ac0"}
+[debug] [2025-06-13T04:25:20.207Z] Checked if tokens are valid: true, expires at: 1749792013081
+[debug] [2025-06-13T04:25:20.207Z] Checked if tokens are valid: true, expires at: 1749792013081
+[debug] [2025-06-13T04:25:20.208Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/gostosas-sem-filtros [none]
+[debug] [2025-06-13T04:25:20.593Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/gostosas-sem-filtros 200
+[debug] [2025-06-13T04:25:20.594Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/gostosas-sem-filtros {"projectId":"gostosas-sem-filtros","projectNumber":"785644385804","displayName":"Gostosas Sem Filtros","name":"projects/gostosas-sem-filtros","resources":{"hostingSite":"gostosas-sem-filtros","realtimeDatabaseInstance":"gostosas-sem-filtros-default-rtdb"},"state":"ACTIVE","etag":"1_6904a63b-2a11-4bfc-b3d8-00a515e15ac0"}
+[info] 
+[info] === Deploying to 'gostosas-sem-filtros'...
+[info] 
+[info] i  deploying database, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2025-06-13T04:25:20.603Z] Checked if tokens are valid: true, expires at: 1749792013081
+[debug] [2025-06-13T04:25:20.603Z] Checked if tokens are valid: true, expires at: 1749792013081
+[debug] [2025-06-13T04:25:20.603Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/gostosas-sem-filtros/locations/-/instances/gostosas-sem-filtros-default-rtdb [none]
+[debug] [2025-06-13T04:25:22.054Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/gostosas-sem-filtros/locations/-/instances/gostosas-sem-filtros-default-rtdb 200
+[debug] [2025-06-13T04:25:22.054Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/gostosas-sem-filtros/locations/-/instances/gostosas-sem-filtros-default-rtdb {"name":"projects/785644385804/locations/us-central1/instances/gostosas-sem-filtros-default-rtdb","project":"projects/785644385804","databaseUrl":"https://gostosas-sem-filtros-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[debug] [2025-06-13T04:25:22.055Z] Checked if tokens are valid: true, expires at: 1749792013081
+[debug] [2025-06-13T04:25:22.055Z] Checked if tokens are valid: true, expires at: 1749792013081
+[debug] [2025-06-13T04:25:22.056Z] >>> [apiv2][query] PUT https://gostosas-sem-filtros-default-rtdb.firebaseio.com/.settings/rules.json dryRun=true
+[debug] [2025-06-13T04:25:22.056Z] >>> [apiv2][body] PUT https://gostosas-sem-filtros-default-rtdb.firebaseio.com/.settings/rules.json "{\n  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */\n  \"rules\": {\n    \".read\": false,\n    \".write\": false\n  }\n}"
+[debug] [2025-06-13T04:25:22.819Z] <<< [apiv2][status] PUT https://gostosas-sem-filtros-default-rtdb.firebaseio.com/.settings/rules.json 200
+[debug] [2025-06-13T04:25:22.819Z] <<< [apiv2][body] PUT https://gostosas-sem-filtros-default-rtdb.firebaseio.com/.settings/rules.json {"status":"ok"}
+[info] +  database: rules syntax for database gostosas-sem-filtros-default-rtdb is valid 
+[debug] [2025-06-13T04:25:22.825Z] Checked if tokens are valid: true, expires at: 1749792013081
+[debug] [2025-06-13T04:25:22.825Z] Checked if tokens are valid: true, expires at: 1749792013081
+[debug] [2025-06-13T04:25:22.825Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/gostosas-sem-filtros/versions [none]
+[debug] [2025-06-13T04:25:22.825Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/gostosas-sem-filtros/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-06-13T04:25:24.986Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/gostosas-sem-filtros/versions 200
+[debug] [2025-06-13T04:25:24.986Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/gostosas-sem-filtros/versions {"name":"projects/785644385804/sites/gostosas-sem-filtros/versions/afbe29d220e78450","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[gostosas-sem-filtros]: beginning deploy... 
+[info] i  hosting[gostosas-sem-filtros]: found 33 files in src 
+[debug] [2025-06-13T04:25:25.037Z] [hosting] uploading with 200 concurrency
+[debug] [2025-06-13T04:25:25.085Z] Checked if tokens are valid: true, expires at: 1749792013081
+[debug] [2025-06-13T04:25:25.085Z] Checked if tokens are valid: true, expires at: 1749792013081
+[debug] [2025-06-13T04:25:25.088Z] [hosting] hash cache [c3Jj] stored for 33 files
+[debug] [2025-06-13T04:25:25.089Z] [hosting][hash queue][FINAL] {"max":38,"min":1,"avg":3.1818181818181817,"active":0,"complete":33,"success":33,"errored":0,"retried":0,"total":33,"elapsed":46}
+[debug] [2025-06-13T04:25:25.090Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/785644385804/sites/gostosas-sem-filtros/versions/afbe29d220e78450:populateFiles [none]
+[debug] [2025-06-13T04:25:25.090Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/785644385804/sites/gostosas-sem-filtros/versions/afbe29d220e78450:populateFiles {"files":{"/css/torreDeProcos.css":"3497cd38e668588c0d2d91aead2b4cef548f71e75803dfc0cdcf157e0a2e33e6","/css/styleMobile.css":"463cdeca4f81d869e971108f4d4a1caf70e76961f44114d1a284c8da7c410164","/css/style.css":"692aa3908d69aaa84718c37ab383c423fda3711cc269a63f2961be31be0060df","/css/section.css":"2ae489920a3859707ab35c24e13ad957bb2869cb3072c7421c381e922324b88a","/css/mobile.css":"b33da1e3aff9579f668e73345107e3959a7d5a21ef00a1420fb66b9733a4a3f6","/css/header.css":"1807860147111e7365c523d5cf100820bc53b4d42801e44d03fd71347ea73267","/css/img/Poliana Castro.jpg":"23a2c3a263c5451acd291ad5ffb1a61549a97c1c0b5176fcd8d3215ff46dbc38","/css/img/mulherNoespehlr.png":"a67519a43c8c9708d843abf1e7ca62ea991620e5c5c433a5861828f80d5a9228","/css/img/Manual.png":"59a5f4f2eea5ef4151f964b7676af02e86b2c97e2037d519659817b39cd4ddf0","/css/img/image.png":"a1d1edafc048404865a0734594db234554518ee35271b2642f7598327aec9ea6","/css/img/GuiaeManual.png":"aebaae8606acac16a47d4986e4f92878cf0e767c308585fd03407d2af00479e7","/css/img/Guia.png":"972507f93b685ebbcd20f527318ca188663e5d5fc1bca9d08f074eceb5768b8d","/css/img/FotoTop.jpg":"30cd6d24a1d85d87664d2a551e683acd31d0058d8e677b28d61ce369909a6763","/css/img/fot 7.png":"a8880ab10d63d139e3fdb7190a666eea916212da9d69074c28a40568a7217363","/css/img/fot 6.png":"00cf5ba158e9d60004cfe6db8539ee85b13beda13e4f9c3bb3c84ea7ed8f5f8e","/css/img/fot 5.png":"7ead17c9fffec0bce5d60ad0bd00ce9b529bb0dd2d322b4b591c8e7842a02d1e","/css/img/fot 4.png":"93daa00f3184af0c5fc052a0878a465db7b220617e5c86ba73e340192e3be65b","/css/img/fot 3.png":"22cac6950f72be748f2a446a40e43cef282ec5c10974cf1fd2a6708ab2b972f4","/css/img/fot 2.png":"f5e9129c33d4e1425ce12b72c0df0e00daa027130970a6c7e94809c33998d6fc","/css/img/fot 1.png":"5ff7e4da73ec44fa65bfab979ba786b6c12402207ff69fa672f3101e8b8f7398","/css/img/ana.JPG":"dc77b59c3ad121b85672b60ee331fd57a0073901f43b79409b9dcd29fb6785c1","/css/img/relatos/relato (9).jpg":"60a9532477fb8216a2c6745d0c58c18ff2110a8fafe83d18c49b283febabddf1","/css/img/relatos/relato (8).jpg":"45ad8f3f50e4d96a87951ff98d8f8a3d333dd550af896576f9533a9d83f889f1","/css/img/relatos/relato (7).jpg":"8a0ae3a5b66119144c930047cf5c57f17b7827989520558f2cc96eec5583c147","/css/img/relatos/relato (6).jpg":"eb0cdd17c9aa228a5c4a5479ca5fa0f28fdab82190057e0c76f9b17368cf7ea2","/css/img/relatos/relato (5).jpg":"42d6b1d71f826990558fc63d12ba59bffdccc6a0e5d848b753295d3cd6e9bb89","/css/img/relatos/relato (4).jpg":"cf5dbc462812a841e532b79c161758f6950fdd9d1986a15903617cd15f5a10ce","/css/img/relatos/relato (3).jpg":"b29c8122ad1ab485c1cbc86b8e87d21b6edb6fcc9f309a2d5fba25951831b3a2","/css/img/relatos/relato (2).jpg":"3313db5e3d3e12ea3ca5625424f1b48e197f29e4ec582ae7a792bf3cc3cefc99","/css/img/relatos/relato (1).jpg":"67bf2ca8135c685b2db731729e8f58e1b096ca9ad8dfcf31100aed36407013eb","/css/img/logo/logo.avif":"577c7593cc2e0168369ff82f459c7ab5fd3123e9816712886b4a033ef580725c","/index.html":"eaa4eea6e6a10808d0e1f4202ab097ddb72f468ccf206b9bce436e1a338ffc10","/js/index.js":"b29a5c6ce31191557845d521490905b07e8413fd50fe1a6562a7d0f589c2be62"}}
