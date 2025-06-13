@@ -169,7 +169,7 @@
 }
 
 .benefit-item {
-  background: url("css/img/fot\ 5.png") no-repeat center center / cover;;
+  background: url("../css/img/fot\ 5.png") no-repeat center center / cover;
   backdrop-filter: blur(10px);
   padding: 45px;
   border-radius: 20px;
@@ -184,7 +184,7 @@
   content: "";
   position: absolute;
   inset: 0; /* cobre toda a seção */
-  background: rgba(0, 0, 0, 0.705); /* opacidade da camada escura */
+  background: rgba(0, 0, 0, 0.527); /* opacidade da camada escura */
   z-index: 0;
 }
 
