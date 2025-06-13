@@ -1,0 +1,23 @@
+{
+  "name": "poliana-castro",
+  "version": "1.0.0",
+  "description": "Gostosas sem filtros - Program",
+  "homepage": "https://github.com/PedroVinicins/Poliana-Castro----mariajulianacei#readme",
+  "bugs": {
+    "url": "https://github.com/PedroVinicins/Poliana-Castro----mariajulianacei/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PedroVinicins/Poliana-Castro----mariajulianacei.git"
+  },
+  "license": "ISC",
+  "author": "Pedro vinicius - https://github.com/PedroVinicins",
+  "type": "commonjs",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

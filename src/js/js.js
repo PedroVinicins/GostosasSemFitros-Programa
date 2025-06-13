@@ -1,29 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Inicializa todas as funcionalidades
-    inicializarBotaoWhatsApp();
+
     inicializarAnimacoes();
     inicializarCarrosselDepoimentos();
     inicializarRolagemSuave();
 });
-
-// 1. Botão Flutuante do WhatsApp
-function inicializarBotaoWhatsApp() {
-    // Cria o botão flutuante
-    const botaoFlutuante = document.createElement("a");
-    botaoFlutuante.href = "https://wa.me/SEUNUMERO?text=Olá%2C+quero+garantir+minha+vaga!";
-    botaoFlutuante.className = "whatsapp-float";
-    botaoFlutuante.innerHTML = '<i class="ri-whatsapp-line"></i> Fale conosco';
-    document.body.appendChild(botaoFlutuante);
-    
-    // Configura os botões fixos de WhatsApp
-    document.querySelectorAll(".whatsapp-button").forEach(botao => {
-        botao.addEventListener("click", () => {
-            window.open(botaoFlutuante.href, "_blank");
-            console.log("Clique no WhatsApp registrado");
-        });
-    });
-}
-
 // 2. Animação de Elementos na Tela
 function inicializarAnimacoes() {
     const observador = new IntersectionObserver(
@@ -155,6 +135,7 @@ function inicializarConfetes() {
   }
   document.getElementById('botao-confetes')?.addEventListener('click', soltarConfetes);
 }
+
 inicializarConfetes();
 
  solicitarPermissaoNotificacao();

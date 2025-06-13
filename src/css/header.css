@@ -1,6 +1,6 @@
 /* HERO - Mobile First */
 .hero {
-  background: url("/src/css/img/top-header.png") no-repeat center/cover;
+  background: url("/src/css/img/mulherNoespehlr.png") no-repeat center/cover;
   min-height: 90vh;
   display: flex;
   align-items: center;
@@ -8,7 +8,18 @@
   padding: 2rem 1rem;
   position: relative;
   text-align: center;
+  z-index: 1;
+  position: relative;
 }
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* <-- controla a escuridão */
+  z-index: 0;
+}
+
 
 .hero-content {
   max-width: 100%;
@@ -19,7 +30,8 @@
   font-size: 2.2rem;
   line-height: 1.2;
   margin-bottom: 1rem;
-  color: white;
+  padding: 12px;
+  color: rgb(255, 255, 255);
 }
 
 .hero h2 {
@@ -27,7 +39,7 @@
   font-weight: 700;
   margin-bottom: 1.2rem;
   line-height: 1.3;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .hero p {
