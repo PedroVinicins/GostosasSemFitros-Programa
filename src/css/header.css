@@ -1,6 +1,5 @@
-/* HERO - Mobile First */
 .hero {
-  background: url("css/img/fot\ 4.png") no-repeat center center / cover;;
+ background: url("../css/img/fot 4.png") no-repeat center center / cover;
   min-height: 90vh;
   display: flex;
   align-items: center;
@@ -13,7 +12,7 @@
 
 @media (max-width: 768px) {
   .hero {
-    background: url("css/img/image.png") no-repeat center center / cover;;
+    background: url("../css/img/fot 1.png") no-repeat center center / cover;;
   }
 }
 
