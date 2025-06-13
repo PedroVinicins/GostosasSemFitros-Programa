@@ -169,7 +169,7 @@
 }
 
 .benefit-item {
-  background: url("/src/css/img/fot\ 5.png") no-repeat center center / cover;;
+  background: url("css/img/fot\ 5.png") no-repeat center center / cover;;
   backdrop-filter: blur(10px);
   padding: 45px;
   border-radius: 20px;
