@@ -18,7 +18,7 @@ Landing page desenvolvida para o programa **Gostosas Sem Filtros**, voltado ao e
 
 ## 🧠 Como Trabalhei no Projeto
 
-Eu, **Pedro Vinicius**, atuei como **desenvolvedor fullstack** responsável por todas as etapas:
+Eu, atuei como **desenvolvedor fullstack** responsável por todas as etapas:
 
 - **Planejamento da estrutura** da página com foco em copywriting de vendas
 - **Criação da identidade visual** baseada em cores quentes e fontes femininas
