@@ -29,7 +29,7 @@ Eu, **Pedro Vinicius**, atuei como **desenvolvedor fullstack** responsável por 
 
 ## 📸 Screenshot
 
-![Screenshot da Landing Page](./tela.png)
+![Screenshot da Landing Page](./Tela.png)
 
 ## 🚀 Deploy
 
