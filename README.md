@@ -6,7 +6,6 @@ Landing page desenvolvida para o programa **Gostosas Sem Filtros**, voltado ao e
 
 - **HTML5** semântico
 - **CSS3** customizado com responsividade
-- **Tailwind CSS + DaisyUI** para estilização ágil e moderna
 - **JavaScript Vanilla** para interatividade
 - **Firebase** Hospedagem
 
